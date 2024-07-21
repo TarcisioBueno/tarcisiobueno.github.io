@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "jupyter-notebooks.html",
+    "href": "jupyter-notebooks.html",
+    "title": "Tarcisio Bueno",
+    "section": "",
+    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJul 20, 2024\n\n\nPost With Code\n\n\nHarlow Malloc\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My personal website",
+    "section": "",
+    "text": "Welcome to my personal website! This digital space is a knowledge hub where I showcase my passion for machine learning and data science. Here, you’ll find:\n:::"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "My personal website",
+    "section": "About Me",
+    "text": "About Me"
+  },
+  {
+    "objectID": "index.html#my-toolbox",
+    "href": "index.html#my-toolbox",
+    "title": "My personal website",
+    "section": "My Toolbox",
+    "text": "My Toolbox"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "class-notes.html",
+    "href": "class-notes.html",
+    "title": "Class Notes",
+    "section": "",
+    "text": "Welcome to my collection of class notes from various courses during my studies. Each topic contains detailed notes with code snippets and interactive animations where applicable.\n\n\n\n\nMachine Learning Fundamentals\n\n\n\n\nExplore the core concepts of machine learning, including supervised and unsupervised learning, model evaluation, and feature engineering. These notes cover essential algorithms and their applications.\nView Notes →\n\n\n\n\n\nMachine Learning\n\n\n\n\n\n\n\n\nMachine Learning Fundamentals\n\n\n\n\nExplore the core concepts of machine learning, including supervised and unsupervised learning, model evaluation, and feature engineering. These notes cover essential algorithms and their applications.\nView Notes →\n\n\n\n\n\nMachine Learning\n\n\n\n\n\n\n\n\nMachine Learning Fundamentals\n\n\n\n\nExplore the core concepts of machine learning, including supervised and unsupervised learning, model evaluation, and feature engineering. These notes cover essential algorithms and their applications.\nView Notes →\n\n\n\n\n\nMachine Learning"
+  },
+  {
+    "objectID": "jupyter-notebooks/21-07-2024-test/test.html",
+    "href": "jupyter-notebooks/21-07-2024-test/test.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "import numpy as np\nimport matplotlib.pyplot as plt\n\n\nTitle 1\n\nfig, ax = plt.subplots()\n\nfruits = ['apple', 'blueberry', 'cherry', 'orange']\ncounts = [40, 100, 30, 55]\nbar_labels = ['red', 'blue', '_red', 'orange']\nbar_colors = ['tab:red', 'tab:blue', 'tab:red', 'tab:orange']\n\nax.bar(fruits, counts, label=bar_labels, color=bar_colors)\n\nax.set_ylabel('fruit supply')\nax.set_title('Fruit supply by kind and color')\nax.legend(title='Fruit color')\n\nplt.show()\n\n\n\n\n\n\n\n\n\n\nTitle 2\n\nspecies = ('Adelie', 'Chinstrap', 'Gentoo')\nsex_counts = {\n    'Male': np.array([73, 34, 61]),\n    'Female': np.array([73, 34, 58]),\n}\nwidth = 0.6  # the width of the bars: can also be len(x) sequence\n\n\nfig, ax = plt.subplots()\nbottom = np.zeros(3)\n\nfor sex, sex_count in sex_counts.items():\n    p = ax.bar(species, sex_count, width, label=sex, bottom=bottom)\n    bottom += sex_count\n\n    ax.bar_label(p, label_type='center')\n\nax.set_title('Number of penguins by sex')\nax.legend()\n\nplt.show()"
+  }
+]
