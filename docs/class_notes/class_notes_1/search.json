@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "class_notes",
+    "title": "Machine Learning Fundamentals",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "Preface\nHello this is a book.\n\n\nI can add subtiles\nSome text here\n\n\nI can add some code\nprint('Hello World!')",
     "crumbs": [
       "Preface"
     ]

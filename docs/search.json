@@ -39,21 +39,7 @@
     "href": "class-notes.html",
     "title": "Class Notes",
     "section": "",
-    "text": "Welcome to my collection of class notes from various courses during my studies. Each topic contains detailed notes with code snippets and interactive animations where applicable."
-  },
-  {
-    "objectID": "class-notes.html#machine-learning-fundamentals",
-    "href": "class-notes.html#machine-learning-fundamentals",
-    "title": "Class Notes",
-    "section": "Machine Learning Fundamentals",
-    "text": "Machine Learning Fundamentals\nExplore the core concepts of machine learning, including supervised and unsupervised learning, model evaluation, and feature engineering. These notes cover essential algorithms and their applications.\nView Notes →"
-  },
-  {
-    "objectID": "class-notes.html#machine-learning-fundamentals-1",
-    "href": "class-notes.html#machine-learning-fundamentals-1",
-    "title": "Class Notes",
-    "section": "Machine Learning Fundamentals",
-    "text": "Machine Learning Fundamentals\nExplore the core concepts of machine learning, including supervised and unsupervised learning, model evaluation, and feature engineering. These notes cover essential algorithms and their applications.\nView Notes →"
+    "text": "Welcome to my collection of class notes from various courses during my studies. Each topic contains detailed notes with code snippets and interactive animations where applicable.\n\n  \n    \n      \n        \n          \n            Machine Learning Fundamentals\n            Explore the core concepts of machine learning, including supervised and unsupervised learning, model evaluation, and feature engineering. These notes cover essential algorithms and their applications.\n            View Notes →\n          \n        \n      \n    \n\n    \n      \n        \n          \n            Deep Learning and Neural Networks\n            Dive into the world of deep learning, exploring various neural network architectures, optimization techniques, and their applications in computer vision and natural language processing.\n            View Notes →\n          \n        \n      \n    \n\n    \n      \n        \n          \n            Data Visualization Techniques\n            Learn about various data visualization techniques and tools to effectively communicate insights from complex datasets. Explore best practices for creating informative and visually appealing charts and graphs.\n            View Notes →\n          \n        \n      \n    \n  \n\n\nWelcome to my collection of class notes from various courses during my studies. Each topic contains detailed notes with code snippets and interactive animations where applicable."
   },
   {
     "objectID": "jupyter-notebooks/21-07-2024-test/test.html",
