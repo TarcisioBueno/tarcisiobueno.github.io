@@ -1,0 +1,92 @@
+[
+  {
+    "objectID": "deep-learning.html",
+    "href": "deep-learning.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "1.1 Limitations",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "deep-learning.html#when-should-you-use-techniques-to-avoid-overfitting",
+    "href": "deep-learning.html#when-should-you-use-techniques-to-avoid-overfitting",
+    "title": "1  Introduction",
+    "section": "1.3 When should you use techniques to avoid overfitting?",
+    "text": "1.3 When should you use techniques to avoid overfitting?\n\n1.3.1 Accuracy of the model",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "deep-learning.html#the-resnet-architecture",
+    "href": "deep-learning.html#the-resnet-architecture",
+    "title": "1  Introduction",
+    "section": "1.4 The ResNet architecture",
+    "text": "1.4 The ResNet architecture",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "deep-learning.html#metrics-vs-loss",
+    "href": "deep-learning.html#metrics-vs-loss",
+    "title": "1  Introduction",
+    "section": "1.2 Metrics vs Loss",
+    "text": "1.2 Metrics vs Loss\n\n1.2.1 Overfitting\n\n1.2.1.1 When should you use techniques to avoid overfitting?",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "deep-learning.html#pretrained-models",
+    "href": "deep-learning.html#pretrained-models",
+    "title": "1  Introduction",
+    "section": "1.6 Pretrained models",
+    "text": "1.6 Pretrained models",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "deep-learning.html#feedback-loops",
+    "href": "deep-learning.html#feedback-loops",
+    "title": "1  Introduction",
+    "section": "1.2 Feedback loops",
+    "text": "1.2 Feedback loops",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "deep-learning.html#limitations",
+    "href": "deep-learning.html#limitations",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "1.1.1 Labeling data\n\n\n1.1.2 Feedback loops",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "deep-learning.html#archtectures-aka-models",
+    "href": "deep-learning.html#archtectures-aka-models",
+    "title": "1  Introduction",
+    "section": "1.3 Archtectures aka models",
+    "text": "1.3 Archtectures aka models\n\n1.3.1 Pretrained models and when to use them?",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  }
+]
