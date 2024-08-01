@@ -46,13 +46,13 @@
     "href": "jupyter-notebooks/21-07-2024-test/test.html",
     "title": "How to run a jupyter notebook through a remote server on local machine?",
     "section": "",
-    "text": "First, it is important to create a virtual enviroment where you will run your jupyter notebook.\n```shel python3 -m venv path/to/venv\n```shell jupyter notebook –no-browser –port=8080\n```shell ssh -L 8080:localhost:8080 @"
+    "text": "First, it is important to create a virtual enviroment where you will run your jupyter notebook.\npython3 -m venv path/to/venv\n\njupyter notebook –no-browser –port=8080\n``` ssh -L 8080:localhost:8080 @"
   },
   {
     "objectID": "jupyter-notebooks/21-07-2024-test/test.html#creating-a-virtual-environment",
     "href": "jupyter-notebooks/21-07-2024-test/test.html#creating-a-virtual-environment",
     "title": "How to run a jupyter notebook through a remote server on local machine?",
     "section": "",
-    "text": "First, it is important to create a virtual enviroment where you will run your jupyter notebook.\n```shel python3 -m venv path/to/venv\n```shell jupyter notebook –no-browser –port=8080\n```shell ssh -L 8080:localhost:8080 @"
+    "text": "First, it is important to create a virtual enviroment where you will run your jupyter notebook.\npython3 -m venv path/to/venv\n\njupyter notebook –no-browser –port=8080\n``` ssh -L 8080:localhost:8080 @"
   }
 ]
