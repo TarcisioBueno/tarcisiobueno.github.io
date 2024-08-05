@@ -231,18 +231,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>or</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> lab <span class="at">--no-browser</span> <span class="at">--port</span><span class="op">=</span>8080</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Now, run the following command:</p>
-<p>```bash ssh -L 8080:localhost:8080 <remote_user>@<remote_host></remote_host></remote_user></p>
-<p>This command sets up what’s called “local port forwarding”. Here’s what each part means:</p>
-<p><strong>ssh</strong>: The basic command to start a Secure Shell connection. <strong>-L</strong>: This flag tells SSH to set up local port forwarding. <strong>8080:localhost:8080</strong>: This is the port forwarding specification:</p>
-<p>The first 8080 is the local port on your machine. localhost refers to the remote machine (from the remote machine’s perspective). The second 8080 is the port on the remote machine where Jupyter is running.</p>
-<p><remote_user>@<remote_host>: This specifies the username and hostname of the remote server.</remote_host></remote_user></p>
-<p>Here’s what happens when you run this command:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh</span> <span class="at">-L</span> 8080:localhost:8080 <span class="op">&lt;</span>REMOTE_USER<span class="op">&gt;</span>@<span class="op">&lt;</span>REMOTE_HOST<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This command sets up what’s called <strong>local port forwarding</strong>. Here’s what each part means:</p>
 <ul>
-<li>It establishes an SSH connection to the remote host.</li>
-<li>It sets up a tunnel that forwards connections from your local port 8080 to port 8080 on the remote machine.</li>
-<li>When you access http://localhost:8080 in your local browser, the request is securely forwarded through the SSH tunnel to port 8080 on the remote machine.</li>
-<li>The remote Jupyter server receives the request and sends the response back through the same tunnel.</li>
+<li><strong><code>ssh</code></strong>: The basic command to start a Secure Shell connection.</li>
+<li><strong><code>-L</code></strong>: This flag tells SSH to set up local port forwarding.</li>
+<li><strong><code>8080:localhost:8080</code></strong>: This is the port forwarding specification:
+<ul>
+<li>The first <code>8080</code> is the local port on your machine.</li>
+<li><code>localhost</code> refers to the remote machine (from the remote machine’s perspective).</li>
+<li>The second <code>8080</code> is the port on the remote machine where Jupyter is running.</li>
+</ul></li>
+<li><strong><code>&lt;REMOTE_USER&gt;@&lt;REMOTE_HOST&gt;</code></strong>: This specifies the username and hostname of the remote server.</li>
 </ul>
+<p>Here’s what happens when you run this command:</p>
+<ol type="1">
+<li>It establishes an SSH connection to the remote host.</li>
+<li>It sets up a tunnel that forwards connections from your local port <code>8080</code> to port <code>8080</code> on the remote machine.</li>
+<li>When you access <code>http://localhost:8080</code> in your local browser, the request is securely forwarded through the SSH tunnel to port <code>8080</code> on the remote machine.</li>
+<li>The remote Jupyter server receives the request and sends the response back through the same tunnel.</li>
+</ol>
 
 
 </section>
