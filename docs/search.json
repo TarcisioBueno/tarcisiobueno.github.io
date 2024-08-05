@@ -28,11 +28,39 @@
     "text": "My Toolbox"
   },
   {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "TarcisioBueno",
+    "section": "",
+    "text": "How to run a jupyter notebook through a remote server on local machine?\n\n\n\n\n\n\ndata science\n\n\ncode\n\n\n\n\n\n\n\n\n\nJul 28, 2024\n\n\nTarcisio Bueno\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "blog/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine.html",
+    "href": "blog/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine.html",
+    "title": "How to run a jupyter notebook through a remote server on local machine?",
+    "section": "",
+    "text": "First, it’s important to create a virtual environment where you’ll run your Jupyter notebook. This isolates your project dependencies from other Python projects.\npython3 -m venv path/to/venv"
+  },
+  {
+    "objectID": "blog/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine.html#creating-and-using-a-virtual-environment-for-jupyter",
+    "href": "blog/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine.html#creating-and-using-a-virtual-environment-for-jupyter",
+    "title": "How to run a jupyter notebook through a remote server on local machine?",
+    "section": "",
+    "text": "First, it’s important to create a virtual environment where you’ll run your Jupyter notebook. This isolates your project dependencies from other Python projects.\npython3 -m venv path/to/venv"
+  },
+  {
+    "objectID": "blog/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine.html#creating-a-virtual-environment",
+    "href": "blog/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine.html#creating-a-virtual-environment",
+    "title": "How to run a jupyter notebook through a remote server on local machine?",
+    "section": "Creating a virtual environment",
+    "text": "Creating a virtual environment\nFirst, it is important to create a virtual enviroment where you will run your jupyter notebook.\npython3 -m venv path/to/venv\nTo activate it, type the following into your command line:\nsource path/to/venv/bin/activate\nInstall jupyter lab or jupyter notebook in your new environement:\npip install jupyterlab  # for Jupyter Lab"
   },
   {
     "objectID": "class-notes.html",
@@ -42,22 +70,22 @@
     "text": "Welcome to my collection of class notes from various courses during my studies. Each topic contains detailed notes with code snippets and interactive animations where applicable.\n\n  \n    \n      \n        \n          \n            Deep Learning\n            Notes about deep learning.\n            View Notes →\n          \n        \n      \n    \n\n\n  \n\n\nWelcome to my collection of class notes from various courses during my studies. Each topic contains detailed notes with code snippets and interactive animations where applicable."
   },
   {
-    "objectID": "jupyter-notebooks/21-07-2024-test/test.html",
-    "href": "jupyter-notebooks/21-07-2024-test/test.html",
+    "objectID": "jupyter-notebooks/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine.html",
+    "href": "jupyter-notebooks/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine.html",
     "title": "How to run a jupyter notebook through a remote server on local machine?",
     "section": "",
     "text": "First, it’s important to create a virtual environment where you’ll run your Jupyter notebook. This isolates your project dependencies from other Python projects.\npython3 -m venv path/to/venv"
   },
   {
-    "objectID": "jupyter-notebooks/21-07-2024-test/test.html#creating-and-using-a-virtual-environment-for-jupyter",
-    "href": "jupyter-notebooks/21-07-2024-test/test.html#creating-and-using-a-virtual-environment-for-jupyter",
+    "objectID": "jupyter-notebooks/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine.html#creating-and-using-a-virtual-environment-for-jupyter",
+    "href": "jupyter-notebooks/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine.html#creating-and-using-a-virtual-environment-for-jupyter",
     "title": "How to run a jupyter notebook through a remote server on local machine?",
     "section": "",
     "text": "First, it’s important to create a virtual environment where you’ll run your Jupyter notebook. This isolates your project dependencies from other Python projects.\npython3 -m venv path/to/venv"
   },
   {
-    "objectID": "jupyter-notebooks/21-07-2024-test/test.html#creating-a-virtual-environment",
-    "href": "jupyter-notebooks/21-07-2024-test/test.html#creating-a-virtual-environment",
+    "objectID": "jupyter-notebooks/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine.html#creating-a-virtual-environment",
+    "href": "jupyter-notebooks/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine.html#creating-a-virtual-environment",
     "title": "How to run a jupyter notebook through a remote server on local machine?",
     "section": "Creating a virtual environment",
     "text": "Creating a virtual environment\nFirst, it is important to create a virtual enviroment where you will run your jupyter notebook.\npython3 -m venv path/to/venv\nTo activate it, type the following into your command line:\nsource path/to/venv/bin/activate\nInstall jupyter lab or jupyter notebook in your new environement:\npip install jupyterlab  # for Jupyter Lab"

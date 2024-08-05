@@ -2,7 +2,13 @@
   {
     "listing": "/jupyter-notebooks.html",
     "items": [
-      "/jupyter-notebooks/21-07-2024-test/test.html"
+      "/jupyter-notebooks/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine/how-to-run-a-jupyter-notebook-through-a-remote-server-on-local-machine.html"
     ]
   }
 ]

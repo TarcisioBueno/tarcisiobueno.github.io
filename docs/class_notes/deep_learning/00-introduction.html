@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tarcisio Bueno">
-<meta name="dcterms.date" content="2025-09-07">
 
-<title>TarcisioBueno</title>
+<title>1&nbsp; Limitations – TarcisioBueno</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,7 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./00-introduction.html" rel="next">
+<link href="./summary.html" rel="next">
+<link href="./index.html" rel="prev">
 <link href="./../../images/index/tarcisiobueno_avatar.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -124,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./00-introduction.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Limitations</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -138,13 +137,13 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./00-introduction.html" class="sidebar-item-text sidebar-link">
+  <a href="./00-introduction.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Limitations</span></span></a>
   </div>
 </li>
@@ -170,7 +169,27 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#labeling-data" id="toc-labeling-data" class="nav-link active" data-scroll-target="#labeling-data"><span class="header-section-number">1.0.1</span> Labeling data</a></li>
+  <li><a href="#feedback-loops" id="toc-feedback-loops" class="nav-link" data-scroll-target="#feedback-loops"><span class="header-section-number">1.0.2</span> Feedback loops</a></li>
+  <li><a href="#metrics-vs-loss" id="toc-metrics-vs-loss" class="nav-link" data-scroll-target="#metrics-vs-loss"><span class="header-section-number">1.1</span> Metrics vs Loss</a>
+  <ul class="collapse">
+  <li><a href="#overfitting" id="toc-overfitting" class="nav-link" data-scroll-target="#overfitting"><span class="header-section-number">1.1.1</span> Overfitting</a></li>
+  </ul></li>
+  <li><a href="#archtectures-aka-models" id="toc-archtectures-aka-models" class="nav-link" data-scroll-target="#archtectures-aka-models"><span class="header-section-number">1.2</span> Archtectures aka models</a>
+  <ul class="collapse">
+  <li><a href="#pretrained-models-and-when-to-use-them" id="toc-pretrained-models-and-when-to-use-them" class="nav-link" data-scroll-target="#pretrained-models-and-when-to-use-them"><span class="header-section-number">1.2.1</span> Pretrained models and when to use them?</a></li>
+  </ul></li>
+  <li><a href="#how-can-image-recognizers-be-used-for-non-image-tasks" id="toc-how-can-image-recognizers-be-used-for-non-image-tasks" class="nav-link" data-scroll-target="#how-can-image-recognizers-be-used-for-non-image-tasks"><span class="header-section-number">1.3</span> How can image recognizers be used for non-image tasks?</a></li>
+  <li><a href="#types-of-models" id="toc-types-of-models" class="nav-link" data-scroll-target="#types-of-models"><span class="header-section-number">1.4</span> Types of models</a>
+  <ul class="collapse">
+  <li><a href="#segmentation" id="toc-segmentation" class="nav-link" data-scroll-target="#segmentation"><span class="header-section-number">1.4.1</span> Segmentation</a></li>
+  <li><a href="#tabular" id="toc-tabular" class="nav-link" data-scroll-target="#tabular"><span class="header-section-number">1.4.2</span> Tabular</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">1.4.3</span> </a></li>
+  </ul></li>
+  <li><a href="#datasets-for-training-a-model" id="toc-datasets-for-training-a-model" class="nav-link" data-scroll-target="#datasets-for-training-a-model"><span class="header-section-number">1.5</span> Datasets for training a model</a>
+  <ul class="collapse">
+  <li><a href="#how-to-build-these-datasets" id="toc-how-to-build-these-datasets" class="nav-link" data-scroll-target="#how-to-build-these-datasets"><span class="header-section-number">1.5.1</span> How to build these datasets?</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -179,26 +198,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">TarcisioBueno</h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Limitations</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Tarcisio Bueno </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 7, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -208,11 +215,95 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>This is a collection of notes related to the topic of deep learning.</p>
+<section id="labeling-data" class="level3" data-number="1.0.1">
+<h3 data-number="1.0.1" class="anchored" data-anchor-id="labeling-data"><span class="header-section-number">1.0.1</span> Labeling data</h3>
+</section>
+<section id="feedback-loops" class="level3" data-number="1.0.2">
+<h3 data-number="1.0.2" class="anchored" data-anchor-id="feedback-loops"><span class="header-section-number">1.0.2</span> Feedback loops</h3>
+</section>
+<section id="metrics-vs-loss" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="metrics-vs-loss"><span class="header-section-number">1.1</span> Metrics vs Loss</h2>
+<section id="overfitting" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="overfitting"><span class="header-section-number">1.1.1</span> Overfitting</h3>
+<section id="when-should-you-use-techniques-to-avoid-overfitting" class="level4" data-number="1.1.1.1">
+<h4 data-number="1.1.1.1" class="anchored" data-anchor-id="when-should-you-use-techniques-to-avoid-overfitting"><span class="header-section-number">1.1.1.1</span> When should you use techniques to avoid overfitting?</h4>
+</section>
+</section>
+</section>
+<section id="archtectures-aka-models" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="archtectures-aka-models"><span class="header-section-number">1.2</span> Archtectures aka models</h2>
+<section id="pretrained-models-and-when-to-use-them" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="pretrained-models-and-when-to-use-them"><span class="header-section-number">1.2.1</span> Pretrained models and when to use them?</h3>
+<p>Using a pretained model is known as _______.</p>
+<section id="fine-tuning" class="level4" data-number="1.2.1.1">
+<h4 data-number="1.2.1.1" class="anchored" data-anchor-id="fine-tuning"><span class="header-section-number">1.2.1.1</span> Fine-tuning</h4>
+</section>
+</section>
+</section>
+<section id="how-can-image-recognizers-be-used-for-non-image-tasks" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="how-can-image-recognizers-be-used-for-non-image-tasks"><span class="header-section-number">1.3</span> How can image recognizers be used for non-image tasks?</h2>
+<p>The idea is to get the non-image date and transform it into an image. The way this is done can vary depending on the time of data. Below are some examples:</p>
+<ol type="1">
+<li>Use techiniques like Gramian Angular Difference Field (GADF) to turn time series into images.</li>
+</ol>
+</section>
+<section id="types-of-models" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="types-of-models"><span class="header-section-number">1.4</span> Types of models</h2>
+<section id="segmentation" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="segmentation"><span class="header-section-number">1.4.1</span> Segmentation</h3>
+</section>
+<section id="tabular" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="tabular"><span class="header-section-number">1.4.2</span> Tabular</h3>
+</section>
+<section id="section" class="level3" data-number="1.4.3">
+<h3 data-number="1.4.3" class="anchored" data-anchor-id="section"><span class="header-section-number">1.4.3</span> </h3>
+</section>
+</section>
+<section id="datasets-for-training-a-model" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="datasets-for-training-a-model"><span class="header-section-number">1.5</span> Datasets for training a model</h2>
+<ol type="1">
+<li>Training set</li>
+<li>Validation set</li>
+<li>Test set</li>
+</ol>
+<section id="how-to-build-these-datasets" class="level3" data-number="1.5.1">
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="how-to-build-these-datasets"><span class="header-section-number">1.5.1</span> How to build these datasets?</h3>
+<ol type="1">
+<li>Name five areas where deep learning is now the best in the world.</li>
+<li>What was the name of the first device that was based on the principle of the artificial neuron?</li>
+<li>Based on the book of the same name, what are the requirements for parallel distributed processing (PDP)?</li>
+<li>What were the two theoretical misunderstandings that held back the field of neural networks?</li>
+<li>What is a GPU?</li>
+<li>Why is it hard to use a traditional computer program to recognize images in a photo?</li>
+<li>What did Samuel mean by “weight assignment”?</li>
+<li>What term do we normally use in deep learning for what Samuel called “weights”?</li>
+<li>Draw a picture that summarizes Samuel’s view of a machine learning model.</li>
+<li>Why is it hard to understand why a deep learning model makes a particular prediction?</li>
+<li>What is the name of the theorem that shows that a neural network can solve any mathematical problem to any level of accuracy?</li>
+<li>What do you need in order to train a model?</li>
+<li>How could a feedback loop impact the rollout of a predictive policing model?</li>
+<li>Do we always have to use 224×224-pixel images with the cat recognition model?</li>
+<li>What is the difference between classification and regression?</li>
+<li>What is a validation set? What is a test set? Why do we need them?</li>
+<li>What will fastai do if you don’t provide a validation set?</li>
+<li>Can we always use a random sample for a validation set? Why or why not?</li>
+<li>What is overfitting? Provide an example.</li>
+<li>What is a metric? How does it differ from “loss”?</li>
+<li>How can pretrained models help?</li>
+<li>What is the “head” of a model?</li>
+<li>What kinds of features do the early layers of a CNN find? How about the later layers?</li>
+<li>Are image models only useful for photos?</li>
+<li>What is an “architecture”?</li>
+<li>What is segmentation?</li>
+<li>What is y_range used for? When do we need it?</li>
+<li>What are “hyperparameters”?</li>
+<li>What’s the best way to avoid failures when using AI in an organization?</li>
+<li>Why is a GPU useful for deep learning? How is a CPU different, and why is it less effective for deep learning?</li>
+<li>Try to think of three areas where feedback loops might impact the use of machine learning. See if you can find documented examples of that happening in practice.</li>
+</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -782,10 +873,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./00-introduction.html" class="pagination-link" aria-label="Limitations">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Limitations</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link" aria-label="Summary">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
