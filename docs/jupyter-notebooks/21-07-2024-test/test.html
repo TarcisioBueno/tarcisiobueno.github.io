@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -125,7 +159,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#creating-a-virtual-environment" id="toc-creating-a-virtual-environment" class="nav-link active" data-scroll-target="#creating-a-virtual-environment">Creating a virtual environment</a></li>
+  <li><a href="#creating-and-using-a-virtual-environment-for-jupyter" id="toc-creating-and-using-a-virtual-environment-for-jupyter" class="nav-link active" data-scroll-target="#creating-and-using-a-virtual-environment-for-jupyter">Creating and Using a Virtual Environment for Jupyter</a>
+  <ul class="collapse">
+  <li><a href="#create-a-virtual-environment" id="toc-create-a-virtual-environment" class="nav-link" data-scroll-target="#create-a-virtual-environment">1. Create a Virtual Environment</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -167,15 +204,48 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="creating-a-virtual-environment" class="level2">
-<h2 class="anchored" data-anchor-id="creating-a-virtual-environment">Creating a virtual environment</h2>
-<p>First, it is important to create a virtual enviroment where you will run your jupyter notebook.</p>
-<pre><code>python3 -m venv path/to/venv
-</code></pre>
-<p>jupyter notebook –no-browser –port=8080</p>
-<p>``` ssh -L 8080:localhost:8080 <remote_user>@<remote_host></remote_host></remote_user></p>
+<section id="creating-and-using-a-virtual-environment-for-jupyter" class="level2">
+<h2 class="anchored" data-anchor-id="creating-and-using-a-virtual-environment-for-jupyter">Creating and Using a Virtual Environment for Jupyter</h2>
+<section id="create-a-virtual-environment" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-virtual-environment">1. Create a Virtual Environment</h3>
+<p>First, it’s important to create a virtual environment where you’ll run your Jupyter notebook. This isolates your project dependencies from other Python projects.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-m</span> venv path/to/venv</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">## Creating a virtual environment</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">First,</span> it is important to create a virtual enviroment where you will run your jupyter notebook. </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">```</span><span class="fu">bash</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-m</span> venv path/to/venv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To activate it, type the following into your command line:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> path/to/venv/bin/activate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Install jupyter lab or jupyter notebook in your new environement:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install jupyterlab  <span class="co"># for Jupyter Lab</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># or</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install notebook    <span class="co"># for Jupyter Notebook</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Run</span> a jupyter notebook or jupyter lab with no-browser on port 8080 <span class="er">(</span><span class="ex">it</span> could be another port<span class="kw">)</span><span class="bu">.</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="kw">```</span><span class="fu">bash</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> notebook <span class="at">--no-browser</span> <span class="at">--port</span><span class="op">=</span>8080</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>or</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> lab <span class="at">--no-browser</span> <span class="at">--port</span><span class="op">=</span>8080</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now, run the following command:</p>
+<p>```bash ssh -L 8080:localhost:8080 <remote_user>@<remote_host></remote_host></remote_user></p>
+<p>This command sets up what’s called “local port forwarding”. Here’s what each part means:</p>
+<p><strong>ssh</strong>: The basic command to start a Secure Shell connection. <strong>-L</strong>: This flag tells SSH to set up local port forwarding. <strong>8080:localhost:8080</strong>: This is the port forwarding specification:</p>
+<p>The first 8080 is the local port on your machine. localhost refers to the remote machine (from the remote machine’s perspective). The second 8080 is the port on the remote machine where Jupyter is running.</p>
+<p><remote_user>@<remote_host>: This specifies the username and hostname of the remote server.</remote_host></remote_user></p>
+<p>Here’s what happens when you run this command:</p>
+<ul>
+<li>It establishes an SSH connection to the remote host.</li>
+<li>It sets up a tunnel that forwards connections from your local port 8080 to port 8080 on the remote machine.</li>
+<li>When you access http://localhost:8080 in your local browser, the request is securely forwarded through the SSH tunnel to port 8080 on the remote machine.</li>
+<li>The remote Jupyter server receives the request and sends the response back through the same tunnel.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
